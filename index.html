@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my-calculator</title>
     <script  src="js/jquery-3.6.0.js"></script>
-    <script type="text/javascript"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,43 +15,44 @@
     <div class="container">
         <div class="cal">
             <div>
-    <input type="text" class="result" value="244" readonly>
+    <input class="result">
             </div>
 
     <!-- buttons -->
-<div>
-    <button type="button" class="calc-btn">7</button>
-    <button type="button" class="calc-btn">8</button>
-    <button type="button" class="design">9</button>
-    <button type="button" class="calc-btn">/</button>
-    <button type="button" class="calc-btn">(</button>
-</div><br>
+    <div>
 
-<div>
-    <button type="button" class="calc-btn">4</button>
-    <button type="button" class="design">5</button>
-    <button type="button" class="design">6</button>
-    <button type="button" class="design">+</button>
-    <button type="button" class="calc-btn">)</button>
-</div><br>
+<input type="button" value="7" onclick="insrt(7)">
+<input type="button" value="8" onclick="insrt(8)">
+<input type="button" value="9" onclick="insrt(9)">
+<input type="button" value="/" onclick="insrt('/')">
 
-<div>
-    <button type="button" class="design">1</button>
-    <button type="button" class="design">2</button>
-    <button type="button" class="design">3</button>
-    <button type="button" class="design">-</button>
-    <button type="button" class="design">X**2</button>
-</div><br>
-
-<div>
-    <button type="button" class="calc-btn">.</button>
-    <button type="button" class="calc-btn">0</button>
-    <button type="button" class="calc-btn">=</button>
-    <button type="button" class="calc-btn">x</button>
-    <button type="button" class="calc-btn">DEL</button>
 </div>
 
+<div>
 
+    <input type="button" value="4" onclick="insrt(4)">
+    <input type="button" value="5" onclick="insrt(5)">
+    <input type="button" value="6" onclick="insrt(6)">
+    <input type="button" value="+" onclick="insrt('+')">
+    
+    </div>
+    <div>
+
+        <input type="button" value="1" onclick="insrt(1)">
+        <input type="button" value="2" onclick="insrt(2)">
+        <input type="button" value="3" onclick="insrt(3)">
+        <input type="button" value="-" onclick="insrt('-')">
+        
+        </div>
+
+        <div>
+
+            <input type="button" value="c" onclick="c()">
+            <input type="button" value="<" onclick="insrt('<')">
+            <input type="button" value="x**2" onclick="insrt(x**2)">
+            <input type="button" value="=" onclick="equal('=')">
+            
+            </div>
     </div>
 
 
