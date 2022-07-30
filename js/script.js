@@ -6,6 +6,11 @@ function equal(){
     $(".result").val(eval($(".result").val()));
 }
 
+function del(num){
+    value= $(".result").val()
+    $(".reuslt").val(value.substring(0,value.lenght - 1))
+}
+
 
 function c(){
     $(".result").val("");
